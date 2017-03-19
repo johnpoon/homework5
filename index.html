@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- Use echarts.js -->
+    <script src="echarts.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+
+    <title>Homework 4 </title>    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12  col-sm-12 col-xs-12">
+                 <h1> E Chart Homework 5</h1>
+                      <h2> by John Poon </h2>
+              </div>
+          </div>
+        </div>
+    
+
+<body>
+	<div class="row">
+
+   <div id="born" style=height:500px;">
+       <div class="col-md-2 col-md-offset-3">
+<script type="text/javascript">
+option = {
+    title: {
+        text: '香港出生率'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['男嬰出生人數','女嬰出生人數','總出生人數']
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['1961','1962','1963','1964','1965','1966','1967','1968','1969','1970','1971','1972','1973','1974','1975','1976','1977','1978','1979','1980','1981','1982','1983','1984','1985','1986','1987','1988','1989','1990','1991','1992','1993','1994','1995','1996','1997','1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'男嬰出生人數',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[57361,58161,59064,55388,52029,47489,45668,42608,42480,40734,41096,41476,42417,42967,41535,40780,41333,41773,42352,44101,44610,44351,42836,39943,39296,36917,35979,39046,35815,35115,35197,36700,36505,37278,35566,32664,30880,27718,26712,28280,25160,24955,24406,25827,29880,34595,37448,41928,43966,47366,51286,48777,29806,32262,28660]
+        },
+        {
+            name:'女嬰出生人數',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[53523,54342,55486,52237,49081,44343,42547,40077,40002,38398,38693,38868,39835,40614,38255,37731,38689,39184,39623,41189,42141,41769,40457,37354,36830,34703,33979,36366,33806,32616,33084,34249,33946,34368,33071,30627,28370,25259,24569,25854,23059,23254,22559,23969,27218,31031,33427,36894,38129,41218,44165,42781,27278,30043,31218,
+]
+        },
+        {
+            name:'總出生人數',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[110884, 112503,114550,107625,101110,91832,88215,82685,82482,79132,79789,80344,82252,83581,79790,78511,80022,80957,81975,85290,86751,86120,83293,77297,76126,71620,69958,75412,69621,67731,68281,70949,70451,71646,68637,63291,59250,52977,51281,54134,48219,48209,46965,49796,57098,65626,70875,78822,82095,88584,95451,91558,57084,62305,59878,
+]
+        },
+        
+    ]
+};
+            var myChart1 = echarts.init(document.getElementById('born'));
+            myChart1.setOption(option);
+    </script>
+</body>
